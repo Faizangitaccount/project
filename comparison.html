@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="img/hc-logo1.png" rel="icon">
+
+    <style>
+
+
+
+        td>img {
+            width: 100%;
+            height: 250px;
+            object-fit: contain;
+        }
+    </style>
+    <title>HairCare</title>
+</head>
+
+<body>
+
+    <section id="header">
+        <a href="#"><img src="img/logo1.png" class="logo" onclick="window.location.href='index.html';"></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a class="active" href="#" class="dropbtn">Products</a>
+                    <div class="dropdown-content">
+                        
+                        <a href="shop.html">Hair Care</a>
+                        <a href="women.html">Women</a>
+                        <a href="men.html">Men</a>
+                        <a href="features.html">Featured</a>
+                        <a href="hair-equipment.html">Hair Equipment</a>
+                        <a href="new-arrival.html">New Arrivals</a>
+                    </div>
+                <li><a href="blog.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a  href="contact.html">Contact</a></li>
+                
+                <li id="lg-bag"><a href="signup.html"><i class="far fa-user"></i></a> </li>
+                
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="signup.html"><i class="far fa-user"></i></a>
+            <i id="bar" class="fas fa-outdent" ></i>
+        </div> 
+    </section>
+
+    <section id="page-header" class="about-header">
+
+        <h2>#Compare</h2>
+
+        <p>Compare Product, And Choose What is Best For You !</p>
+    </section>
+    <div class="container">
+        <div class="col-md-9 mx-auto">
+            <table class="table">
+                <tr class="bg-light">
+                    <th>Select Product</th>
+                    <th width="300px">
+                        <select class="form-control" id="select1" onchange="item1(this.value)">
+                            <option value="0">-- Select Anyone --</option>
+                        </select>
+                    </th>
+                    <th width="300px">
+                        <select class="form-control" id="select2" onchange="item2(this.value)">
+                            <option value="0">-- Select Anyone --</option>
+                        </select>
+                    </th>
+                </tr>
+                <tr>
+                    <th>Product Image</th>
+                    <td>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/No-Image-Placeholder.svg/1665px-No-Image-Placeholder.svg.png"
+                            id="img1" alt=" ">
+                    </td>
+                    <td>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/No-Image-Placeholder.svg/1665px-No-Image-Placeholder.svg.png"
+                            id="img2" alt=" ">
+                    </td>
+                </tr>
+                <tr>
+                    <th>Product Price</th>
+                    <td id="price1">N/A</td>
+                    <td id="price2">N/A</td>
+                </tr>
+                <tr>
+                    <th>Product Description</th>
+                    <td id="desc1">N/A</td>
+                    <td id="desc2">N/A</td>
+                </tr>
+                <tr>
+                    <th>Product Brand</th>
+                    <td id="brand1">N/A</td>
+                    <td id="brand2">N/A</td>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+
+       <section id="newsletter"  class="section-p1 section-m1">
+            <div class="newstext">
+                <h4>Sign Up For Newsletters</h4>
+                <p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
+            </div>
+            <div class="form">
+                <input type="text" placeholder="Your email address" required>
+                <button class="normal">Sign Up</button>
+            </div>
+        </section>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/K5o7U1WrJXc?si=fnS7yCpyeyOsF2-U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="display: none;"></iframe>
+
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="img/logo1.png" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> B-1/14 Nazimabad Rd No 3, Karachi, Sindh</p>
+            <p><strong>Phone:</strong> +01 3001 477 /(+92) 01 2033 6789</p>
+            <p><strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                 <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>   
+                  <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a> 
+                  <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>  
+                   <a href="https://www.pinterest.com/" target="_blank"><i class="fab fa-pinterest-p"></i></a> 
+                  <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>  
+                </div>
+            </div>
+        </div>
+    
+    <div class="col">
+        <h4>About</h4>
+        <a href="about.html">About Us</a>
+        <a href="#">Delivery Information</a>
+        <a href="#">Private Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="contact.html">Contact Us</a>
+    </div>
+    <div class="col">
+        <h4>My Account</h4>
+        <a href="contact.html">Sign In</a>
+        <a href="cart.html">View Cart</a>
+        <a href="cart.html">My Wishlist</a>
+        <a href="#">Track My Order</a>
+        <a href="#">Help</a>
+    </div>
+    
+    <div class="col install">
+        <h4>install App</h4>
+    <p>From App Store or Google Play</p>
+    <div class="row">
+        <img src="img/pay/app.jpg" alt="">
+        <img src="img/pay/play.jpg" alt="">
+    </div>
+    <p>Secured Payment Gateways</p>
+    <img src="img/pay/pay.png" alt="">
+    </div>
+    
+    <div class="copyright">
+        <p>© Copyright HairCare. All Rights Reserved</p>
+        <p style="font-size: 13px;">Designed by FABRD </p>
+    
+    </div>
+    
+    </footer>
+    
+        
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js "></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+
+<script src="data.js"></script>
+<script src="comparison.js"></script>
